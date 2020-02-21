@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Affordable and professional web design">
+  <meta name="author" content="Justin Mangay">
+  <title>CCN WEB DESIGN | Welcome</title>
+  <link rel="stylesheet" href="./css/style.css" media="all"/>
+  <script src="js/jquery-1.8.1.min.js"></script>
+  <script src="js/jquery.carouFredSel-6.0.5-packed.js"></script>
+  <script type="text/javascript" language="javascript">
+		$(function(){
+		$("#foo1").carouFredSel();
+		$("foo2").carouFredSel({
+		width:1000,
+		items:8,
+		scroll:4,
+		});
+		$("#foo3").carouFredSel({
+		items :1,
+		direction:"up",
+		auto:{
+		easing :"alastic",
+		duration:1000,
+		timeoutDuration:2000,
+		pauseOnHover:true
+		}
+		}).find(".slide").hover(
+		function(){$(this).find("div").slideDown();},
+		);
+		});
+		</script>
+		<script type="text/javascript" language="javascript">
+		var siteroot="../";
+		</head>
+</head>
+</html>
